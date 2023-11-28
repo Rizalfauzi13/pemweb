@@ -1,0 +1,34 @@
+*{box-sizing: border-box;}
+body{display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+#main{
+    display: flex;
+    flex: 1;
+}
+#main>Article{
+    flex: 1;
+    order: 1;
+}
+#main>nav,#main>aside{
+    flex:  0 20vw;
+}
+#main>nav{
+    background: lightseagreen;
+    order: 3;
+    text-align: center;
+}
+#main>Aside{
+    background: pink;
+    order: 2;
+    text-align: center;
+}
+Header,footer{
+    background: burlywood;
+    height: 5vh;
+}
+Header,footer,Article,Nav,Aside{
+    padding: 1em;
+   }
